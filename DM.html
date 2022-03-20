@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS 3 Selectors, Borders, Colors</title>
+    <style>
+        main {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<h1>Le Pont Mirabeau</h1>
+
+<ul id="menu-deroulant">
+    <li><a href="#">Home</a>
+       
+    </li>
+     <li><a href="#">Services</a>
+       <ul>
+          <li><a href="#">Strategy</a></li>
+          <li><a href="#">Optimization</a></li>
+       </ul>
+    </li>
+    <li><a href="#">Publications</a>
+       <ul>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Tutorials</a></li>
+       </ul>
+    </li>
+    <li><a href="#">Events</a>
+        
+     </li>
+     <li><a href="#">Contact</a>
+        
+     </li>
+ </ul>
+<div id= "texte">
+   <p>Sous le pont Mirabeau coule la Seine
+   Et nos amours
+   Faut-il qu'il m'en souvienne
+   La joie venait toujours après la peine
+   <br>
+   Vienne la nuit sonne l'heure
+   Les jours s'en vont je demeure
+   <br>
+   Les mains dans les mains restons face à face
+   Tandis que sous
+   Le pont de nos bras passe
+   Des éternels regards l'onde si lasse
+   <br>
+   Vienne la nuit sonne l'heure
+   Les jours s'en vont je demeure
+   <br>
+   L'amour s'en va comme cette eau courante
+   L'amour s'en va
+   Comme la vie est lente
+   Et comme l'Espérance est violente
+   <br>
+   Vienne la nuit sonne l'heure
+   Les jours s'en vont je demeure
+   <br>
+   Passent les jours et passent les semaines
+   Ni temps passé
+   Ni les amours reviennent
+   Sous le pont Mirabeau coule la Seine
+   <br>
+   Vienne la nuit sonne l'heure
+   Les jours s'en vont je demeure 
+   <br> "Le Pont Mirabeau" Apollinaire, Alcools (1912)
+</p></div>
+ <style>
+
+
+#texte {
+  
+   color: rgb(0, 0, 0);
+   margin-left: 12em;
+   padding: 3px 0 1px 5%;
+   
+}
+p {
+    display: block;
+    margin-block-start: -13em;
+    margin-block-end: 1em;
+    margin-inline-start: 10px;
+    margin-inline-end: 0px;
+}
+
+#menu-deroulant {
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align: center;
+    width: 180px;
+    
+  }
+  #menu-deroulant ul {
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align: center;
+  }
+  #menu-deroulant li {
+     background-color:#729EBF; 
+     background-image:-webkit-linear-gradient(top, #1480d3 0%, #d6ca91 100%);
+     background-image: linear-gradient(to bottom, #1480d3 0%, #d6ca91 100%);
+     border-radius: 6px;
+     margin-bottom:2px;
+     box-shadow: 3px 3px 3px rgb(47, 173, 182);
+     border:solid 1px #51a9f7
+  }
+  #menu-deroulant li li {
+     max-height:0;
+     overflow: hidden;
+     transition: all .5s;
+     border-radius:0;
+     background: #444;
+     box-shadow: none;
+     border:none;
+     margin:0
+  }
+  #menu-deroulant a {
+    display:block;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 0;
+    font-family: verdana;
+    font-size:1.2em
+  }
+  #menu-deroulant ul li a, #menu-deroulant li:hover li a {
+    font-size:1em
+  }
+  #menu-deroulant li:hover {
+     background: #729EBF
+  }
+  #menu-deroulant li li:hover {
+     background: #999;
+  }
+  #menu-deroulant ul li:last-child {
+     border-radius: 0 0 6px 6px;
+     border:none;
+  }
+  #menu-deroulant li:hover li {
+    max-height: 15em;
+  }
+
+  </style>
